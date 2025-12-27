@@ -1,0 +1,219 @@
+import { Container } from "@/components/Container";
+import { Navigation } from "@/components/Navigation";
+import { CopyEmail } from "@/components/CopyEmail";
+import { Footer } from "@/components/Footer";
+import { Cpu, Settings, LineChart, ArrowRight, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import headshot from "@/assets/headshot.png";
+
+export default function Home() {
+  return (
+    <>
+      <Navigation />
+      
+      <Container className="py-20 md:py-32">
+        {/* Section A: The Header (The Spec Sheet) */}
+        <section className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-start">
+          <div className="md:col-span-5 aspect-[4/5] bg-foreground/5 relative overflow-hidden transition-all duration-700 border border-foreground/10 group">
+            <Image 
+              src={headshot} 
+              alt="Fahad Shoukat" 
+              fill 
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
+          </div>
+          
+          <div className="md:col-span-7 space-y-8">
+            <div className="space-y-2">
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">PROFILE_IDENTIFICATION</span>
+              <h1 className="text-5xl md:text-7xl font-sans font-black tracking-tighter leading-[0.9]">
+                Fahad Shoukat
+              </h1>
+            </div>
+            
+            <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
+              <div className="grid grid-cols-3 items-baseline">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Architecture</span>
+                <span className="col-span-2 text-sm">Electrical Engineer + MBA</span>
+              </div>
+              <div className="grid grid-cols-3 items-baseline">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Current_State</span>
+                <span className="col-span-2 text-sm">VP Operations @ Allocate</span>
+              </div>
+              <div className="grid grid-cols-3 items-baseline">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Previous_State</span>
+                <span className="col-span-2 text-sm">COO @ Skiplist</span>
+              </div>
+              <div className="grid grid-cols-3 items-baseline">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Core_Function</span>
+                <span className="col-span-2 text-sm leading-relaxed">&quot;Bridging the gap between the metal and the market.&quot;</span>
+              </div>
+              <div className="grid grid-cols-3 items-baseline pt-4 border-t border-foreground/5">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Connect</span>
+                <div className="col-span-2 flex gap-6">
+                  <Link 
+                    href="https://www.linkedin.com/in/fahadshoukat/" 
+                    target="_blank"
+                    className="flex items-center gap-2 text-xs hover:text-accent transition-colors group"
+                  >
+                    <Linkedin size={14} />
+                    <span className="border-b border-transparent group-hover:border-accent">LinkedIn</span>
+                  </Link>
+                  <Link 
+                    href="https://x.com/fahadshoukat_" 
+                    target="_blank"
+                    className="flex items-center gap-2 text-xs hover:text-accent transition-colors group"
+                  >
+                    <Twitter size={14} />
+                    <span className="border-b border-transparent group-hover:border-accent">Twitter</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section B: The "Three Blades" Grid */}
+        <section className="mt-40">
+          <div className="mb-16 space-y-2">
+            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">CORE_COMPETENCIES</span>
+            <h2 className="text-3xl font-sans font-black tracking-tight">The Three Blades</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
+            <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors group">
+              <div className="h-10 w-10 border border-foreground/20 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                <Cpu size={20} />
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold font-sans">Engineering</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed font-mono">
+                  Deep technical fluency. I don&apos;t just manage engineers; I speak their language.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors group">
+              <div className="h-10 w-10 border border-foreground/20 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                <Settings size={20} />
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold font-sans">Operations</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed font-mono">
+                  Simplicity-driven execution. Breaking complex visions into 8-week deliverable blocks.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors group">
+              <div className="h-10 w-10 border border-foreground/20 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all">
+                <LineChart size={20} />
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold font-sans">Venture</h3>
+                <p className="text-sm text-foreground/70 leading-relaxed font-mono">
+                  Thesis-driven capital allocation. Identifying signal in the noise.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section C: The "Active Processes" */}
+        <section className="mt-40 grid grid-cols-1 md:grid-cols-2 gap-20">
+          <div className="space-y-12">
+            <div className="space-y-2">
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">ACTIVE_PROCESSES</span>
+              <h2 className="text-3xl font-sans font-black tracking-tight">Status: Operational</h2>
+            </div>
+            
+            <div className="space-y-8">
+              <div className="flex gap-6 items-start">
+                <div className="font-mono text-[10px] text-foreground/30 pt-1">01</div>
+                <div className="space-y-1">
+                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Building</div>
+                  <div className="font-sans font-bold text-lg">Scaling Allocate Platform</div>
+                </div>
+              </div>
+              
+              <div className="flex gap-6 items-start">
+                <div className="font-mono text-[10px] text-foreground/30 pt-1">02</div>
+                <div className="space-y-1">
+                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Reading</div>
+                  <div className="font-sans font-bold text-lg">Principles of Industrial Design</div>
+                </div>
+              </div>
+              
+              <div className="flex gap-6 items-start">
+                <div className="font-mono text-[10px] text-foreground/30 pt-1">03</div>
+                <div className="space-y-1">
+                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Writing</div>
+                  <Link href="/blog" className="font-sans font-bold text-lg hover:text-accent transition-colors flex items-center gap-2 group">
+                    Industrial Elegance vs. Digital Noise
+                    <ArrowRight size={16} className="-rotate-45 group-hover:rotate-0 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border border-foreground/10 p-8 md:p-12 relative flex flex-col justify-between group overflow-hidden">
+            <div className="absolute inset-0 blueprint-grid opacity-10 pointer-events-none" />
+            <div className="space-y-6 z-10">
+              <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-foreground/40">Inquiry_Module</div>
+              <p className="text-2xl font-bold font-sans leading-tight tracking-tight">
+                Seeking clarity in technical systems? Let&apos;s discuss architecture.
+              </p>
+            </div>
+            
+            <div className="mt-12 z-10">
+              <CopyEmail email="fahad@fahadshoukat.com" />
+            </div>
+          </div>
+        </section>
+
+        {/* Section D: Selected Work */}
+        <section className="mt-40">
+          <div className="mb-16 space-y-2">
+            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">PROJECT_PORTFOLIO</span>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Selected Work</h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-foreground/10 border border-foreground/10">
+            <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors">
+              <h3 className="text-xl font-bold font-sans">Enterprise Biz Dev, GTM, and Partnerships</h3>
+              <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
+                <li>Growing enterprise revenue from zero to multi-million dollar ARR regions.</li>
+                <li>Establishing partnerships across US and International.</li>
+                <li>Building data systems that supercharge growth.</li>
+                <li>Presidents Clubs, 2x exits, Salesforce architecture and deployments.</li>
+              </ul>
+            </div>
+            
+            <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors">
+              <h3 className="text-xl font-bold font-sans">Wireless, Mobile, and Semiconductors</h3>
+              <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
+                <li>New product design and production for chipset designers, mobile device manufacturers, infrastructure manufacturers, test houses, and network operators shaping the next generation of wireless communications (Cellular, WiFi, BT, UWB, IoT).</li>
+                <li>Projects: Nest, Google Pixel, Intel Processors, Low Orbit Satellite, Nvidia Chipsets/GPU.</li>
+              </ul>
+            </div>
+            
+            <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors col-span-full">
+              <h3 className="text-xl font-bold font-sans">Automotive</h3>
+              <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
+                <li>Advancement of the automotive industry’s vision of autonomous driving, electrification, and connectivity.</li>
+                <li>Solving these challenges required the development of advanced sensors such as imaging radar, adoption of new wireless technologies (WiFi, 5G), use of high voltage, fast-switching semiconductors and migration to higher data rate in-vehicle networks.</li>
+                <li>Projects: Tesla Model X/3, Neo, Zoox, Ford, Drive, Uber, Waymo.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </Container>
+      
+      <Footer />
+    </>
+  );
+}
