@@ -39,12 +39,16 @@ This project is automatically deployed to GitHub Pages via GitHub Actions. The d
 
 **Status:** ![Deploy Status](https://github.com/fahadshoukat/fahadwebsite/actions/workflows/deploy.yml/badge.svg)
 
-**Live Site:** The site is available at your GitHub Pages URL (typically `https://<your-username>.github.io/fahadwebsite/`)
+**Live Site:** [https://fahadshoukat.com](https://fahadshoukat.com)
 
-To enable GitHub Pages:
+To enable GitHub Pages with custom domain:
 1. Go to your repository **Settings** → **Pages**
 2. Under **Source**, select **GitHub Actions**
-3. The workflow will automatically deploy on the next push to `main`
+3. Under **Custom domain**, enter `fahadshoukat.com` and save
+4. Configure your DNS records:
+   - Add an A record pointing to GitHub Pages IPs: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Or add a CNAME record pointing to `fahsho.github.io` (if using www subdomain)
+5. The workflow will automatically deploy on the next push to `main`
 
 ### Deploy on Vercel
 
