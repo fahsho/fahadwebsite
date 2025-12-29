@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+![Deploy Status](https://github.com/fahadshoukat/fahadwebsite/actions/workflows/deploy.yml/badge.svg)
+
 ## Getting Started
 
 First, run the development server:
@@ -29,8 +31,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### GitHub Pages
+
+This project is automatically deployed to GitHub Pages via GitHub Actions. The deployment workflow runs on every push to the `main` branch.
+
+**Status:** ![Deploy Status](https://github.com/fahadshoukat/fahadwebsite/actions/workflows/deploy.yml/badge.svg)
+
+**Live Site:** The site is available at your GitHub Pages URL (typically `https://<your-username>.github.io/fahadwebsite/`)
+
+To enable GitHub Pages:
+1. Go to your repository **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. The workflow will automatically deploy on the next push to `main`
+
+### Deploy on Vercel
+
+Alternatively, you can deploy your Next.js app using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
