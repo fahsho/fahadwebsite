@@ -41,9 +41,6 @@ export default function BlogIndex() {
                       </p>
                     )}
                   </div>
-                  <time className="font-mono text-[10px] uppercase tracking-widest text-foreground/30 whitespace-nowrap">
-                    {post.date}
-                  </time>
                 </article>
               </Link>
             ))}

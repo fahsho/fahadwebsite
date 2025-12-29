@@ -36,9 +36,6 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             </Link>
 
             <header className="mb-16 space-y-4">
-              <time className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent font-bold">
-                {postData.date}
-              </time>
               <h1 className="text-4xl md:text-6xl font-sans font-black tracking-tighter leading-none">
                 {postData.title}
               </h1>

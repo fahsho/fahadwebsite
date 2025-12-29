@@ -1,5 +1,5 @@
 import { Container } from "./Container";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin, X } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -24,8 +24,8 @@ export function Footer() {
               target="_blank"
               className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
             >
-              <Twitter size={12} />
-              TWITTER
+              <X size={12} />
+              X
             </Link>
           </div>
         </div>

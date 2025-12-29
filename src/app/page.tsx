@@ -2,7 +2,8 @@ import { Container } from "@/components/Container";
 import { Navigation } from "@/components/Navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { Footer } from "@/components/Footer";
-import { Cpu, Settings, LineChart, ArrowRight, Linkedin, Twitter } from "lucide-react";
+import { AnimatedName } from "@/components/AnimatedName";
+import { Cpu, Settings, LineChart, ArrowRight, Linkedin, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import headshot from "@/assets/headshot.png";
@@ -29,9 +30,11 @@ export default function Home() {
           <div className="md:col-span-7 space-y-8">
             <div className="space-y-2">
               <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">PROFILE_IDENTIFICATION</span>
-              <h1 className="text-5xl md:text-7xl font-sans font-black tracking-tighter leading-[0.9]">
-                Fahad Shoukat
-              </h1>
+              <AnimatedName 
+                text="Fahad Shoukat"
+                className="text-5xl md:text-7xl font-sans font-black tracking-tighter leading-[0.9]"
+                speed={80}
+              />
             </div>
             
             <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
@@ -67,8 +70,8 @@ export default function Home() {
                     target="_blank"
                     className="flex items-center gap-2 text-xs hover:text-accent transition-colors group"
                   >
-                    <Twitter size={14} />
-                    <span className="border-b border-transparent group-hover:border-accent">Twitter</span>
+                    <X size={14} />
+                    <span className="border-b border-transparent group-hover:border-accent">X</span>
                   </Link>
                 </div>
               </div>
