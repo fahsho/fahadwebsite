@@ -173,7 +173,7 @@ export default function Home() {
             </div>
             
             <div className="mt-12 z-10">
-              <CopyEmail email="fahad@fahadshoukat.com" />
+              <CopyEmail email="hello@shocasegroup.com" />
             </div>
           </div>
         </section>
