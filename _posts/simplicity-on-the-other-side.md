@@ -1,3 +1,9 @@
+---
+title: "Simplicity on the Other Side of Complexity"
+date: "2025-12-26"
+excerpt: "Why the best systems don't scream for attention."
+---
+
 > Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.   -Steve Jobs
 
 As software continues to eat the world, it also eats our wallets.
