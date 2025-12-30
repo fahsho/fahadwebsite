@@ -66,7 +66,7 @@ export default function Home() {
                     <span className="border-b border-transparent group-hover:border-accent">LinkedIn</span>
                   </Link>
                   <Link 
-                    href="https://x.com/fahadshoukat_" 
+                    href="https://x.com/fahadshoukat" 
                     target="_blank"
                     className="flex items-center gap-2 text-xs hover:text-accent transition-colors group"
                   >
@@ -118,7 +118,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Sales</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Move deals forward a focus on value and a technical driven approach.
+                  Move deals forward with a focus on value and a technical driven approach.
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Home() {
             <div className="space-y-6 z-10">
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-foreground/40">Inquiry_Module</div>
               <p className="text-2xl font-bold font-sans leading-tight tracking-tight">
-                Seeking clarity? Let&apos;s discuss architecture.
+                Seeking clarity? Let&apos;s discuss.
               </p>
             </div>
             
@@ -191,7 +191,7 @@ export default function Home() {
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
                 <li>Growing enterprise revenue from zero to multi-million dollar ARR regions.</li>
                 <li>Establishing partnerships across US and International.</li>
-                <li>Building data systems that supercharge growth.</li>
+                <li>Building systems that supercharge growth.</li>
                 <li>Presidents Clubs, 2x exits, Salesforce architecture and deployments.</li>
               </ul>
             </div>
@@ -200,7 +200,7 @@ export default function Home() {
               <h3 className="text-xl font-bold font-sans">Wireless, Mobile, and Semiconductors</h3>
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
                 <li>New product design and production for chipset designers, mobile device manufacturers, infrastructure manufacturers, test houses, and network operators shaping the next generation of wireless communications (Cellular, WiFi, BT, UWB, IoT).</li>
-                <li>Projects: Nest, Google Pixel, Intel Processors, Low Orbit Satellite, Nvidia Chipsets/GPU.</li>
+                <li>Projects: Nest, Google Pixel, Intel Chipsets, Low Orbit Satellites, Nvidia Chipsets/GPU.</li>
               </ul>
             </div>
             
@@ -208,7 +208,7 @@ export default function Home() {
               <h3 className="text-xl font-bold font-sans">Automotive</h3>
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
                 <li>Advancement of the automotive industry’s vision of autonomous driving, electrification, and connectivity.</li>
-                <li>Solving these challenges required the development of advanced sensors such as imaging radar, adoption of new wireless technologies (WiFi, 5G), use of high voltage, fast-switching semiconductors and migration to higher data rate in-vehicle networks.</li>
+                <li>Development of advanced sensors, adoption of new wireless technologies (WiFi, 5G), use of high voltage, fast-switching semiconductors and migration to higher data rate in-vehicle networks.</li>
                 <li>Projects: Tesla Model X/3, Neo, Zoox, Ford, Drive, Uber, Waymo.</li>
               </ul>
             </div>
