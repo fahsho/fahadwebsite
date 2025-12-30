@@ -48,7 +48,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Previous_State</span>
-                <span className="col-span-2 text-sm">VP Operaitons @ Allocate, COO @ Skiplist</span>
+                <span className="col-span-2 text-sm">VP Operations @ Allocate, COO @ Skiplist</span>
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Core_Function</span>
