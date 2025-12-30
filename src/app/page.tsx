@@ -44,11 +44,11 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Current_State</span>
-                <span className="col-span-2 text-sm">VP Operations @ Allocate</span>
+                <span className="col-span-2 text-sm">Enjoying Consulting</span>
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Previous_State</span>
-                <span className="col-span-2 text-sm">COO @ Skiplist</span>
+                <span className="col-span-2 text-sm">VP Operaitons @ Allocate, COO @ Skiplist</span>
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Core_Function</span>
@@ -145,17 +145,17 @@ export default function Home() {
               <div className="flex gap-6 items-start">
                 <div className="font-mono text-[10px] text-foreground/30 pt-1">02</div>
                 <div className="space-y-1">
-                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Reading</div>
-                  <div className="font-sans font-bold text-lg">Principles of Industrial Design</div>
+                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Operations</div>
+                  <div className="font-sans font-bold text-lg">First Principles Systems</div>
                 </div>
               </div>
               
               <div className="flex gap-6 items-start">
                 <div className="font-mono text-[10px] text-foreground/30 pt-1">03</div>
                 <div className="space-y-1">
-                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Writing</div>
+                  <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Sales</div>
                   <Link href="/blog" className="font-sans font-bold text-lg hover:text-accent transition-colors flex items-center gap-2 group">
-                    Industrial Elegance vs. Digital Noise
+                    Technical Learning Culture Leads to Growth
                     <ArrowRight size={16} className="-rotate-45 group-hover:rotate-0 transition-transform" />
                   </Link>
                 </div>
@@ -209,7 +209,7 @@ export default function Home() {
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
                 <li>Advancement of the automotive industry’s vision of autonomous driving, electrification, and connectivity.</li>
                 <li>Development of advanced sensors, adoption of new wireless technologies (WiFi, 5G), use of high voltage, fast-switching semiconductors and migration to higher data rate in-vehicle networks.</li>
-                <li>Projects: Tesla Model X/3, Neo, Zoox, Ford, Drive, Uber, Waymo.</li>
+                <li>Projects: Tesla, Neo, Zoox, Ford, Drive, Uber, Waymo.</li>
               </ul>
             </div>
           </div>
