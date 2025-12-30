@@ -94,7 +94,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Engineering</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Deep technical fluency. I don&apos;t just manage engineers; I speak their language.
+                  Merging technical fluency with Sales expertise. Engineers are the backbone.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Operations</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Simplicity-driven execution. Breaking complex visions into 8-week deliverable blocks.
+                  Simplicity-driven systems. Turning founder vision into deliverable blocks.
                 </p>
               </div>
             </div>
@@ -116,9 +116,9 @@ export default function Home() {
                 <LineChart size={20} />
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-bold font-sans">Venture</h3>
+                <h3 className="text-xl font-bold font-sans">Sales</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Thesis-driven capital allocation. Identifying signal in the noise.
+                  Move deals forward a focus on value and a technical driven approach.
                 </p>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function Home() {
                 <div className="font-mono text-[10px] text-foreground/30 pt-1">01</div>
                 <div className="space-y-1">
                   <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Building</div>
-                  <div className="font-sans font-bold text-lg">Scaling Allocate Platform</div>
+                  <div className="font-sans font-bold text-lg">Set the Foundation for Growth</div>
                 </div>
               </div>
               
@@ -168,7 +168,7 @@ export default function Home() {
             <div className="space-y-6 z-10">
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-foreground/40">Inquiry_Module</div>
               <p className="text-2xl font-bold font-sans leading-tight tracking-tight">
-                Seeking clarity in technical systems? Let&apos;s discuss architecture.
+                Seeking clarity? Let&apos;s discuss architecture.
               </p>
             </div>
             
