@@ -1,5 +1,5 @@
 ---
-title: "Simplicity on the Other Side of Complexity"
+title: "Complexity Is Easy"
 date: "2025-12-26"
 excerpt: "Why the best systems don't scream for attention."
 ---

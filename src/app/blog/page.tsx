@@ -19,7 +19,7 @@ export default function BlogIndex() {
               Archive & Insights
             </h1>
             <p className="font-mono text-sm text-foreground/50 leading-relaxed">
-              Technical documentation of systems, architecture, and operational philosophy.
+              Documentation of systems, thoughts, and operational philosophy.
             </p>
           </header>
 
