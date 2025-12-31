@@ -52,7 +52,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Core_Function</span>
-                <span className="col-span-2 text-sm leading-relaxed">&quot;Bridging the gap between the metal and the market.&quot;</span>
+                <span className="col-span-2 text-sm leading-relaxed">&quot;Bridging the gap between the metal and the market.&quot; Few can combine hands-on engineering, operations execution, and sales results to guide companies from idea to revenue without the usual silos.</span>
               </div>
               <div className="grid grid-cols-3 items-baseline pt-4 border-t border-foreground/5">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Connect</span>
@@ -83,7 +83,7 @@ export default function Home() {
         <section className="mt-40">
           <div className="mb-16 space-y-2">
             <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">CORE_COMPETENCIES</span>
-            <h2 className="text-3xl font-sans font-black tracking-tight">The Three Blades</h2>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Our Edge: Tech + Execution + Revenue</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
@@ -94,7 +94,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Engineering</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Merging technical fluency with Sales expertise. Engineers are the backbone.
+                Deep technical fluency paired with real-world sales insight. Build what's feasible and valuable.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Operations</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Simplicity-driven systems. Turning founder vision into deliverable blocks.
+                Turn vision into efficient, scalable systems and deliver reliable results fast.
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Sales</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Move deals forward with a focus on value and a technical driven approach.
+                Advance deals by leading with technical depth and clear value. Close what others can't.
                 </p>
               </div>
             </div>
