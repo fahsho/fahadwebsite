@@ -29,7 +29,7 @@ export default function Home() {
           
           <div className="md:col-span-7 space-y-8">
             <div className="space-y-2">
-              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">PROFILE_IDENTIFICATION</span>
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">ABOUT</span>
               <AnimatedName 
                 text="Fahad Shoukat"
                 className="text-5xl md:text-7xl font-sans font-black tracking-tighter leading-[0.9]"
@@ -38,6 +38,10 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
+              <div className="grid grid-cols-3 items-baseline">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Mission</span>
+                <span className="col-span-2 text-sm leading-relaxed">I help companies bridge engineering, operations, and sales to ship faster and close bigger deals. "Metal to the Market</span>
+              </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Architecture</span>
                 <span className="col-span-2 text-sm">Electrical Engineer + MBA</span>
@@ -49,10 +53,6 @@ export default function Home() {
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Previous_State</span>
                 <span className="col-span-2 text-sm">VP Operations @ Allocate, COO @ Skiplist</span>
-              </div>
-              <div className="grid grid-cols-3 items-baseline">
-                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Core_Function</span>
-                <span className="col-span-2 text-sm leading-relaxed">&quot;Bridging the gap between the metal and the market.&quot; Few can combine hands-on engineering, operations execution, and sales results to guide companies from idea to revenue without the usual silos.</span>
               </div>
               <div className="grid grid-cols-3 items-baseline pt-4 border-t border-foreground/5">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Connect</span>
@@ -94,7 +94,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Engineering</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                Deep technical fluency paired with real-world sales insight. Build what's feasible and valuable.
+                Align engineering teams with sales reality so you build products customers actually buy.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Operations</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                Turn vision into efficient, scalable systems and deliver reliable results fast.
+                Build lean operations that turn your vision into scalable delivery without chaos.
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Sales</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                Advance deals by leading with technical depth and clear value. Close what others can't.
+                Close deals faster by leading with deep engineering insight and clear value.
                 </p>
               </div>
             </div>

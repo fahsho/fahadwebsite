@@ -17,8 +17,8 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fahad Shoukat | Industrial Elegance",
-  description: "Electrical Engineer + MBA. VP Operations @ Allocate. Bridging the gap between the metal and the market.",
+  title: "Fahad Shoukat | Tech + Execution + Revenue",
+  description: "I help tech companies bridge engineering, operations, and sales to ship faster and close bigger deals."
 };
 
 export default function RootLayout({
