@@ -40,7 +40,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Mission</span>
-                <span className="col-span-2 text-sm leading-relaxed">I help companies bridge engineering, operations, and sales to ship faster and close bigger deals. "Metal to the Market"</span>
+                <span className="col-span-2 text-sm leading-relaxed">I help companies bridge engineering, operations, and sales to ship faster and close bigger deals. Metal to the Market.</span>
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Current_State</span>
