@@ -40,15 +40,11 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Mission</span>
-                <span className="col-span-2 text-sm leading-relaxed">I help companies bridge engineering, operations, and sales to ship faster and close bigger deals. "Metal to the Market</span>
-              </div>
-              <div className="grid grid-cols-3 items-baseline">
-                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Architecture</span>
-                <span className="col-span-2 text-sm">Electrical Engineer + MBA</span>
+                <span className="col-span-2 text-sm leading-relaxed">I help companies bridge engineering, operations, and sales to ship faster and close bigger deals. "Metal to the Market"</span>
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Current_State</span>
-                <span className="col-span-2 text-sm">Enjoying Consulting</span>
+                <span className="col-span-2 text-sm">Consulting & Advisory</span>
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Previous_State</span>
@@ -83,7 +79,7 @@ export default function Home() {
         <section className="mt-40">
           <div className="mb-16 space-y-2">
             <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">CORE_COMPETENCIES</span>
-            <h2 className="text-3xl font-sans font-black tracking-tight">Our Edge: Tech + Execution + Revenue</h2>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Tech + Execution + Revenue</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
@@ -129,8 +125,8 @@ export default function Home() {
         <section className="mt-40 grid grid-cols-1 md:grid-cols-2 gap-20">
           <div className="space-y-12">
             <div className="space-y-2">
-              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">ACTIVE_PROCESSES</span>
-              <h2 className="text-3xl font-sans font-black tracking-tight">Status: Operational</h2>
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">ACTIVE_FUNCTIONS</span>
+              <h2 className="text-3xl font-sans font-black tracking-tight">Current Focus</h2>
             </div>
             
             <div className="space-y-8">
@@ -138,7 +134,7 @@ export default function Home() {
                 <div className="font-mono text-[10px] text-foreground/30 pt-1">01</div>
                 <div className="space-y-1">
                   <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Building</div>
-                  <div className="font-sans font-bold text-lg">Set the Foundation for Growth</div>
+                  <div className="font-sans font-bold text-lg">Align Engineering and the Market</div>
                 </div>
               </div>
               
@@ -155,7 +151,7 @@ export default function Home() {
                 <div className="space-y-1">
                   <div className="font-mono text-xs uppercase tracking-widest text-foreground/50">Sales</div>
                   <Link href="/blog" className="font-sans font-bold text-lg hover:text-accent transition-colors flex items-center gap-2 group">
-                    Technical Learning Culture Leads to Growth
+                    Build Trust with Customers
                     <ArrowRight size={16} className="-rotate-45 group-hover:rotate-0 transition-transform" />
                   </Link>
                 </div>
@@ -166,9 +162,9 @@ export default function Home() {
           <div className="border border-foreground/10 p-8 md:p-12 relative flex flex-col justify-between group overflow-hidden">
             <div className="absolute inset-0 blueprint-grid opacity-10 pointer-events-none" />
             <div className="space-y-6 z-10">
-              <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-foreground/40">Inquiry_Module</div>
+              <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-foreground/40">Contact</div>
               <p className="text-2xl font-bold font-sans leading-tight tracking-tight">
-                Seeking clarity? Let&apos;s discuss.
+              Facing gaps between build, deliver, and sell? Let&apos;s discuss.
               </p>
             </div>
             
