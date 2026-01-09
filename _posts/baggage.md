@@ -1,7 +1,7 @@
 ---
-title: “Baggage”
-date: "2026-01-15”
-excerpt: “Free yourself from the past”
+title: "Baggage"
+date: "2026-01-15"
+excerpt: "Free yourself from the past"
 ---
 
 > It’s amazing what happens when you become open to the best ideas, rather than the most credentialed voices. - Morgan Housel
