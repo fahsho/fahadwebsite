@@ -8,7 +8,7 @@ export function Footer() {
       <Container className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col gap-4">
           <div className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase">
-            &copy; 2025 FAHAD SHOUKAT // ARCHIVE
+            &copy; FAHAD SHOUKAT
           </div>
           <div className="flex gap-6">
             <Link 
