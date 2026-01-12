@@ -1,9 +1,8 @@
 import { Container } from "@/components/Container";
 import { Navigation } from "@/components/Navigation";
-import { CopyEmail } from "@/components/CopyEmail";
 import { Footer } from "@/components/Footer";
 import { AnimatedName } from "@/components/AnimatedName";
-import { Cpu, Settings, LineChart, ArrowRight, Linkedin, X } from "lucide-react";
+import { Cpu, Settings, LineChart, Linkedin, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import headshot from "@/assets/headshot.png";
