@@ -68,11 +68,12 @@ export default function Home() {
                     <X size={14} />
                     <span className="border-b border-transparent group-hover:border-accent">X</span>
                   </Link>
-                  <div className="grid grid-cols-3 items-baseline">
-                    <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Message Me</span>
-                    <span className="col-span-2 text-sm">hello@mydomainname.com</span>
-                  </div>
+
                 </div>
+              </div>
+              <div className="grid grid-cols-3 items-baseline">
+                <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Message Me</span>
+                <span className="col-span-2 text-sm">hello@mydomainname.com</span>
               </div>
             </div>
           </div>
