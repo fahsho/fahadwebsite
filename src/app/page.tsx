@@ -83,7 +83,7 @@ export default function Home() {
         <section className="mt-40">
           <div className="mb-16 space-y-2">
             <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">CORE_COMPETENCIES</span>
-            <h2 className="text-3xl font-sans font-black tracking-tight">Tech + Execution + Revenue</h2>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Tech_Execution_Revenue</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
@@ -126,28 +126,26 @@ export default function Home() {
         </section>
 
 
-        {/* Section D: Selected Work */}
+        {/* Section D: Selected Work 
         <section className="mt-40">
           <div className="mb-16 space-y-2">
             <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">PROJECT_PORTFOLIO</span>
-            <h2 className="text-3xl font-sans font-black tracking-tight">Selected Work</h2>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Selected_Work</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-foreground/10 border border-foreground/10">
             <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors">
-              <h3 className="text-xl font-bold font-sans">Enterprise Biz Dev, GTM, and Partnerships</h3>
+              <h3 className="text-xl font-bold font-sans">Enterprise Biz Dev & Partnerships</h3>
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
                 <li>Growing enterprise revenue from zero to multi-million dollar ARR regions.</li>
                 <li>Establishing partnerships across US and International.</li>
-                <li>Building systems that supercharge growth.</li>
-                <li>Presidents Clubs, 2x exits, Salesforce architecture and deployments.</li>
               </ul>
             </div>
 
             <div className="bg-background p-10 space-y-6 hover:bg-foreground/[0.02] transition-colors">
-              <h3 className="text-xl font-bold font-sans">Wireless, Mobile, and Semiconductors</h3>
+              <h3 className="text-xl font-bold font-sans">AI, Storage, Wireless, and Semiconductors</h3>
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
-                <li>New product design and production for chipset designers, mobile device manufacturers, infrastructure manufacturers, test houses, and network operators shaping the next generation of wireless communications (Cellular, WiFi, BT, UWB, IoT).</li>
+                <li>New product design and production for chipset, mobile, and infrastructure manufacturers shaping the next generation of wireless communications.</li>
                 <li>Projects: Nest, Google Pixel, Intel Chipsets, Low Orbit Satellites, Nvidia Chipsets/GPU.</li>
               </ul>
             </div>
@@ -156,12 +154,11 @@ export default function Home() {
               <h3 className="text-xl font-bold font-sans">Automotive</h3>
               <ul className="list-disc list-inside font-mono text-sm text-foreground/70 leading-relaxed space-y-2">
                 <li>Advancement of the automotive industry’s vision of autonomous driving, electrification, and connectivity.</li>
-                <li>Development of advanced sensors, adoption of new wireless technologies (WiFi, 5G), use of high voltage, fast-switching semiconductors and migration to higher data rate in-vehicle networks.</li>
                 <li>Projects: Tesla, Neo, Zoox, Ford, Drive, Uber, Waymo.</li>
               </ul>
             </div>
           </div>
-        </section>
+        </section> */}
       </Container>
 
       <Footer />
