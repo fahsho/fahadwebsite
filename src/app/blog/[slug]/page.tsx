@@ -14,6 +14,14 @@ export async function generateStaticParams() {
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
   const postData = await getPostData(params.slug);
+  const allPosts = getSortedPostsData();
+  const currentIndex = allPosts.findIndex((post) => post.slug === params.slug);
+
+  // Since posts are sorted by date (newest first):
+  // next post is at index - 1 (newer)
+  // previous post is at index + 1 (older)
+  const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const previousPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
 
   return (
     <>
@@ -23,12 +31,12 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       </div>
 
       <Navigation />
-      
+
       <article className="py-20 md:py-32">
         <Container>
           <div className="max-w-2xl mx-auto">
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-foreground/40 hover:text-accent transition-colors mb-12 group"
             >
               <ArrowLeft size={12} className="group-hover:-translate-x-1 transition-transform" />
@@ -46,7 +54,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
               )}
             </header>
 
-            <div 
+            <div
               className="prose prose-neutral dark:prose-invert max-w-none 
                 font-sans text-lg leading-relaxed
                 prose-h2:font-black prose-h2:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
@@ -58,13 +66,56 @@ export default async function BlogPost({ params }: { params: { slug: string } })
               dangerouslySetInnerHTML={{ __html: postData.contentHtml || "" }}
             />
           </div>
+
+          <hr className="my-12 border-foreground/10" />
+
+          <div className="flex flex-col gap-8 max-w-2xl mx-auto">
+            <div className="flex justify-between items-center">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase text-foreground/40 hover:text-accent transition-colors group"
+              >
+                <ArrowLeft size={12} className="group-hover:-translate-x-1 transition-transform" />
+                Return_to_Log
+              </Link>
+            </div>
+
+            {(nextPost || previousPost) && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {previousPost ? (
+                  <Link
+                    href={`/blog/${previousPost.slug}`}
+                    className="group border border-foreground/10 p-6 hover:border-accent/50 transition-colors text-right md:text-left h-full flex flex-col justify-center"
+                  >
+                    <span className="block font-mono text-[10px] tracking-widest uppercase text-foreground/40 mb-1">Previous</span>
+                    <span className="block font-sans font-bold text-lg group-hover:text-accent transition-colors line-clamp-2">
+                      {previousPost.title}
+                    </span>
+                  </Link>
+                ) : <div />}
+
+                {nextPost && (
+                  <Link
+                    href={`/blog/${nextPost.slug}`}
+                    className="group border border-foreground/10 p-6 hover:border-accent/50 transition-colors text-left md:text-right h-full flex flex-col justify-center"
+                  >
+                    <span className="block font-mono text-[10px] tracking-widest uppercase text-foreground/40 mb-1">Next</span>
+                    <span className="block font-sans font-bold text-lg group-hover:text-accent transition-colors line-clamp-2">
+                      {nextPost.title}
+                    </span>
+                  </Link>
+                )}
+              </div>
+            )}
+          </div>
         </Container>
       </article>
 
       <Footer />
 
       {/* Script for progress bar */}
-      <script dangerouslySetInnerHTML={{ __html: `
+      <script dangerouslySetInnerHTML={{
+        __html: `
         window.onscroll = function() {
           var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
           var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
