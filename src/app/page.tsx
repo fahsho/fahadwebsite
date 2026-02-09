@@ -73,7 +73,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-3 items-baseline">
                 <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Message Me</span>
-                <span className="col-span-2 text-sm">hello@mydomainname.com</span>
+                <span className="col-span-2 text-sm">hello@fahadshoukat.com</span>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Engineering</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Get engineering teams to build what sales can sell (and customers will pay for).
+                  Build what sells and what customers will pay for.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Operations</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Build lean operations that the vision into scalable delivery organizing the chaos.
+                  Build lean operations that turn the vision into scalable delivery.
                 </p>
               </div>
             </div>
