@@ -20,7 +20,7 @@ export function Footer() {
               LINKEDIN
             </Link>
             <Link 
-              href="https://x.com/fahadshoukat_" 
+              href="https://x.com/fahadshoukat" 
               target="_blank"
               className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
             >
