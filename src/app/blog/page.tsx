@@ -16,10 +16,10 @@ export default function BlogIndex() {
           <header className="mb-20 space-y-4">
             <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">THE_LOG</span>
             <h1 className="text-4xl md:text-5xl font-sans font-black tracking-tighter">
-              Archive & Insights
+              Insights
             </h1>
             <p className="font-mono text-sm text-foreground/50 leading-relaxed">
-              Documentation of systems, thoughts, and operational philosophy.
+              Documentation of my thoughts, operational philosophy, and how things come together.
             </p>
           </header>
 
