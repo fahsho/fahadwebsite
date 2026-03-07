@@ -10,8 +10,8 @@ export function Navigation() {
           FAHAD_SHOUKAT
         </Link>
         <div className="flex items-center gap-8">
-          <Link href="/blog" className="font-mono text-xs tracking-widest uppercase hover:text-accent transition-colors">
-            LOG
+          <Link href="/about" className="font-mono text-xs tracking-widest uppercase hover:text-accent transition-colors">
+            ABOUT
           </Link>
           <ThemeToggle />
         </div>
