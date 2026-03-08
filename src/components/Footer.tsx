@@ -11,17 +11,19 @@ export function Footer() {
             &copy; FAHAD SHOUKAT
           </div>
           <div className="flex gap-6">
-            <Link 
-              href="https://www.linkedin.com/in/fahadshoukat/" 
+            <Link
+              href="https://www.linkedin.com/in/fahadshoukat/"
               target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
             >
               <Linkedin size={12} />
               LINKEDIN
             </Link>
-            <Link 
-              href="https://x.com/fahadshoukat" 
+            <Link
+              href="https://x.com/fahadshoukat"
               target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
             >
               <X size={12} />

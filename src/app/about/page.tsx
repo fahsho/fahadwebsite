@@ -41,6 +41,7 @@ export default function About() {
                 <Link
                   href="https://www.linkedin.com/in/fahadshoukat/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-xs hover:text-accent transition-colors group"
                 >
                   <Linkedin size={14} />
@@ -49,6 +50,7 @@ export default function About() {
                 <Link
                   href="https://x.com/fahadshoukat"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-xs hover:text-accent transition-colors group"
                 >
                   <X size={14} />
