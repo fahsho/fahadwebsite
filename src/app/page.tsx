@@ -19,7 +19,7 @@ export default function Home() {
               Insights
             </h1>
             <p className="font-mono text-sm text-foreground/50 leading-relaxed">
-              Documentation of my thoughts, operational philosophy, and how things come together.
+              Documentation of my thoughts on business and how things come together.
             </p>
           </header>
 

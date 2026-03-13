@@ -25,15 +25,7 @@ export default function About() {
           <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
             <div className="grid grid-cols-3 items-baseline">
               <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Mission</span>
-              <span className="col-span-2 text-sm leading-relaxed">I bridge engineering, operations, and sales to ship real products and close bigger deals.</span>
-            </div>
-            <div className="grid grid-cols-3 items-baseline">
-              <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Current_State</span>
-              <span className="col-span-2 text-sm">Consulting & Advisory</span>
-            </div>
-            <div className="grid grid-cols-3 items-baseline">
-              <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Previous_State</span>
-              <span className="col-span-2 text-sm">VP Operations @ Allocate, COO @ Skiplist</span>
+              <span className="col-span-2 text-sm leading-relaxed">Building unified knowledge systems to bridge engineering, ops & sales for faster alignment, smarter AI, and to close deals.</span>
             </div>
             <div className="grid grid-cols-3 items-baseline pt-4 border-t border-foreground/5">
               <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Connect</span>
@@ -69,8 +61,8 @@ export default function About() {
         {/* Section B: The "Three Blades" Grid */}
         <section className="mt-40">
           <div className="mb-16 space-y-2">
-            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">CORE_COMPETENCIES</span>
-            <h2 className="text-3xl font-sans font-black tracking-tight">Tech_Execution_Revenue</h2>
+            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">Unified Knowledge Systems</span>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Tech+Execution+Revenue</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
