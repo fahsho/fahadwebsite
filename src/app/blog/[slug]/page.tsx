@@ -36,7 +36,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         <Container>
           <div className="max-w-2xl mx-auto">
             <Link
-              href="/blog"
+              href="/"
               className="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-foreground/40 hover:text-accent transition-colors mb-12 group"
             >
               <ArrowLeft size={12} className="group-hover:-translate-x-1 transition-transform" />
@@ -72,7 +72,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           <div className="flex flex-col gap-8 max-w-2xl mx-auto">
             <div className="flex justify-between items-center">
               <Link
-                href="/blog"
+                href="/"
                 className="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase text-foreground/40 hover:text-accent transition-colors group"
               >
                 <ArrowLeft size={12} className="group-hover:-translate-x-1 transition-transform" />
