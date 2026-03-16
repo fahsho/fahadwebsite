@@ -4,6 +4,8 @@ date: "2026-03-14"
 excerpt: "Efficiency is doing things right. Effectiveness is doing the right things."
 ---
 
+>There is nothing so useless as doing efficiently that which should not be done at all. - Peter Drucker
+
 When it comes to progress, there are two key factors at play: efficiency and effectiveness. While many people tend to focus on improving efficiency, it is effectiveness that drives true progress. 
 
 Efficiency is a measure of how well you can perform a task with the least amount of time and resources. 
