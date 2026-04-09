@@ -25,7 +25,7 @@ export default function About() {
           <div className="grid grid-cols-1 gap-6 border-y border-foreground/10 py-8 font-mono">
             <div className="grid grid-cols-3 items-baseline">
               <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Mission</span>
-              <span className="col-span-2 text-sm leading-relaxed">Building unified knowledge systems to bridge engineering, ops & sales for faster alignment, smarter AI, and to close deals.</span>
+              <span className="col-span-2 text-sm leading-relaxed">In the AI era, legacy systems and disconnected functions kill speed and accuracy. We design modern data foundations that bridge engineering and sales to deliver faster alignment, reliable AI, and compounding revenue.</span>
             </div>
             <div className="grid grid-cols-3 items-baseline pt-4 border-t border-foreground/5">
               <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Connect</span>
@@ -61,8 +61,8 @@ export default function About() {
         {/* Section B: The "Three Blades" Grid */}
         <section className="mt-40">
           <div className="mb-16 space-y-2">
-            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">Unified Knowledge Systems</span>
-            <h2 className="text-3xl font-sans font-black tracking-tight">Tech+Execution+Revenue</h2>
+            <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-accent font-bold">Unified Data Systems</span>
+            <h2 className="text-3xl font-sans font-black tracking-tight">Old silos die here. New foundations win.</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
@@ -73,7 +73,7 @@ export default function About() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold font-sans">Engineering</h3>
                 <p className="text-sm text-foreground/70 leading-relaxed font-mono">
-                  Build what sells and what customers will pay for.
+                  Build systems that ship what customers will pay for.
                 </p>
               </div>
             </div>
