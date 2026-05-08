@@ -51,10 +51,10 @@ export default function About() {
 
               </div>
             </div>
-            <div className="grid grid-cols-3 items-baseline">
+            {/* <div className="grid grid-cols-3 items-baseline">
               <span className="text-[10px] uppercase text-foreground/40 tracking-widest">Message Me</span>
               <span className="col-span-2 text-sm">hello@fahadshoukat.com</span>
-            </div>
+            </div> */}
           </div>
         </section>
 
