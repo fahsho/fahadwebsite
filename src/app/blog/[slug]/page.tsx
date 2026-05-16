@@ -1,7 +1,9 @@
 import { Container } from "@/components/Container";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { getPostData, getSortedPostsData } from "@/lib/posts";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { getPostData, getSortedPostsData, getPostMeta } from "@/lib/posts";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -10,6 +12,32 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata(
+  { params }: { params: { slug: string } }
+): Promise<Metadata> {
+  const post = getPostMeta(params.slug);
+  const description = post.excerpt || "Thoughts on business, systems, and execution by Fahad Shoukat.";
+
+  return {
+    title: post.title,
+    description,
+    openGraph: {
+      title: post.title,
+      description,
+      url: `/blog/${post.slug}`,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+    },
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+  };
 }
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
@@ -29,6 +57,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <div className="fixed top-0 left-0 w-full h-1 z-[60] pointer-events-none">
         <div id="scroll-progress" className="h-full bg-accent transition-all duration-150" style={{ width: '0%' }} />
       </div>
+      <ScrollProgress />
 
       <Navigation />
 
@@ -59,8 +88,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                 font-sans text-lg leading-relaxed
                 prose-h2:font-black prose-h2:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
                 prose-p:mb-8
-                prose-code:font-mono prose-code:text-sm prose-code:bg-foreground/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-                prose-pre:bg-foreground/5 prose-pre:border prose-pre:border-foreground/10 prose-pre:rounded-none prose-pre:p-6
+                prose-code:font-mono prose-code:text-sm prose-code:bg-foreground/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+                prose-pre:border prose-pre:border-foreground/10 prose-pre:rounded-none prose-pre:p-6
                 prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-accent/5 prose-blockquote:py-2 prose-blockquote:px-8 prose-blockquote:italic
                 "
               dangerouslySetInnerHTML={{ __html: postData.contentHtml || "" }}
@@ -112,17 +141,6 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       </article>
 
       <Footer />
-
-      {/* Script for progress bar */}
-      <script dangerouslySetInnerHTML={{
-        __html: `
-        window.onscroll = function() {
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          document.getElementById("scroll-progress").style.width = scrolled + "%";
-        };
-      `}} />
     </>
   );
 }

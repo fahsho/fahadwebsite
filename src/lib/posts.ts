@@ -9,15 +9,32 @@ import { unified } from "unified";
 
 const postsDirectory = path.join(process.cwd(), "_posts");
 
-export interface PostData {
+export interface PostMeta {
   slug: string;
   title: string;
   date: string;
   excerpt?: string;
+}
+
+export interface PostData extends PostMeta {
   contentHtml?: string;
 }
 
-export function getSortedPostsData(): PostData[] {
+function getPostFrontmatter(slug: string): { meta: PostMeta; content: string } {
+  const decodedSlug = decodeURIComponent(slug);
+  const fullPath = path.join(postsDirectory, `${decodedSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const matterResult = matter(fileContents);
+
+  const meta: PostMeta = {
+    slug,
+    ...(matterResult.data as { title: string; date: string; excerpt?: string }),
+  };
+
+  return { meta, content: matterResult.content };
+}
+
+export function getSortedPostsData(): PostMeta[] {
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
@@ -40,26 +57,32 @@ export function getSortedPostsData(): PostData[] {
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+export function getPostMeta(slug: string): PostMeta {
+  const { meta } = getPostFrontmatter(slug);
+  return meta;
+}
+
 export async function getPostData(slug: string): Promise<PostData> {
-  const decodedSlug = decodeURIComponent(slug);
-  const fullPath = path.join(postsDirectory, `${decodedSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const matterResult = matter(fileContents);
+  const { meta, content } = getPostFrontmatter(slug);
 
   const processedContent = await unified()
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeShiki, {
-      theme: "nord", // A clean, technical theme
+      // Dual themes for proper light + dark mode support
+      themes: {
+        light: "github-light",
+        dark: "github-dark-dimmed",
+      },
+      defaultColor: false, // Generate CSS variables instead of forcing one theme
     })
     .use(rehypeStringify)
-    .process(matterResult.content);
+    .process(content);
     
   const contentHtml = processedContent.toString();
 
   return {
-    slug,
+    ...meta,
     contentHtml,
-    ...(matterResult.data as { title: string; date: string; excerpt?: string }),
   };
 }

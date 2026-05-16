@@ -44,3 +44,43 @@ body {
     opacity: 0.05;
   }
 }
+
+/* Shiki syntax highlighting - supports light + dark mode via CSS variables */
+.shiki {
+  font-feature-settings: "liga" 0, "clig" 0;
+  tab-size: 2;
+  overflow-x: auto;
+  border: 1px solid var(--shiki-light-bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.dark .shiki {
+  border-color: var(--shiki-dark-bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.shiki,
+.shiki span {
+  background-color: var(--shiki-light-bg) !important;
+  color: var(--shiki-light) !important;
+}
+
+.dark .shiki,
+.dark .shiki span {
+  background-color: var(--shiki-dark-bg) !important;
+  color: var(--shiki-dark) !important;
+}
+
+/* Make sure inner code doesn't add extra background */
+.prose pre.shiki code {
+  background: transparent !important;
+  padding: 0;
+}
+
+/* Improved focus visibility for minimalist design */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent, #FF5733);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

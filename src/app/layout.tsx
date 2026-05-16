@@ -17,8 +17,42 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fahad Shoukat | Tech + Execution + Revenue",
-  description: "I help tech companies bridge engineering, operations, and sales to ship faster and close bigger deals."
+  title: {
+    default: "Fahad Shoukat | Tech + Execution + Revenue",
+    template: "%s | Fahad Shoukat",
+  },
+  description: "I help tech companies bridge engineering, operations, and sales to ship faster and close bigger deals.",
+  authors: [{ name: "Fahad Shoukat", url: "https://fahadshoukat.com" }],
+  creator: "Fahad Shoukat",
+  metadataBase: new URL("https://fahadshoukat.com"),
+  openGraph: {
+    title: "Fahad Shoukat | Tech + Execution + Revenue",
+    description: "Bridging engineering, operations, and sales to ship faster and close bigger deals.",
+    url: "https://fahadshoukat.com",
+    siteName: "Fahad Shoukat",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fahad Shoukat | Tech + Execution + Revenue",
+    description: "Bridging engineering, operations, and sales to ship faster and close bigger deals.",
+    creator: "@fahadshoukat",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';" />
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self';" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
       </head>
