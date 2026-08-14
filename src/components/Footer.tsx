@@ -1,38 +1,30 @@
 import { Container } from "./Container";
-import { Linkedin, X } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-40 border-t border-foreground/5 py-20">
-      <Container className="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex flex-col gap-4">
-          <div className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase">
-            &copy; FAHAD SHOUKAT
-          </div>
-          <div className="flex gap-6">
-            <Link
-              href="https://www.linkedin.com/in/fahadshoukat/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
-            >
-              <Linkedin size={12} />
-              LINKEDIN
-            </Link>
-            <Link
-              href="https://x.com/fahadshoukat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[10px] text-foreground/40 tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
-            >
-              <X size={12} />
-              X
-            </Link>
-          </div>
+    <footer className="mt-24 border-t border-rule py-8">
+      <Container className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[15px] text-muted">
+        <span>© Fahad Shoukat</span>
+        <div className="flex gap-6">
+          <Link
+            href="https://www.linkedin.com/in/fahadshoukat/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
+            LinkedIn
+          </Link>
+          <Link
+            href="https://x.com/fahadshoukat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors"
+          >
+            X
+          </Link>
         </div>
       </Container>
     </footer>
   );
 }
-

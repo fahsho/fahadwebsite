@@ -12,16 +12,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        muted: "var(--muted)",
+        rule: "var(--rule)",
         accent: {
-          DEFAULT: "#FF5733", // Safety Orange
-          blue: "#002FA7", // International Klein Blue
+          DEFAULT: "var(--accent)",
         },
-        paper: "#F5F5F7",
-        "stark-black": "#111111",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        mono: ["var(--font-ibm-plex-mono)", "monospace"],
+        serif: ["var(--font-newsreader)", "Iowan Old Style", "Palatino Linotype", "Palatino", "serif"],
+        sans: ["var(--font-newsreader)", "Iowan Old Style", "Palatino Linotype", "Palatino", "serif"],
+        mono: ["var(--font-ibm-plex-mono)", "ui-monospace", "monospace"],
       },
     },
   },

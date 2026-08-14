@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { Newsreader, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 
-const inter = Inter({
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-newsreader",
   display: "swap",
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600"],
+  adjustFontFallback: false,
 });
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500"],
   variable: "--font-ibm-plex-mono",
   display: "swap",
 });
@@ -68,12 +71,11 @@ export default function RootLayout({
         <meta name="referrer" content="strict-origin-when-cross-origin" />
       </head>
       <body
-        className={`${inter.variable} ${mono.variable} font-sans antialiased bg-background text-foreground transition-colors duration-300`}
+        className={`${newsreader.variable} ${mono.variable} font-serif antialiased bg-background text-foreground transition-colors duration-300`}
       >
         <Providers>
           <div className="relative min-h-screen flex flex-col">
-            <div className="absolute inset-0 blueprint-grid pointer-events-none" />
-            <main className="flex-grow z-10">
+            <main className="flex-grow">
               {children}
             </main>
           </div>

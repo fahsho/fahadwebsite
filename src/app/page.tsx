@@ -11,36 +11,32 @@ export default function Home() {
     <>
       <Navigation />
 
-      <Container className="py-20 md:py-32">
-        <div className="max-w-2xl">
-          <header className="mb-20 space-y-4">
-            <p className="font-mono text-sm text-foreground/50 leading-relaxed">
-              Thoughts on business and how things come together.
-            </p>
-          </header>
+      <Container className="py-16 md:py-20">
+        <header className="mb-14 max-w-xl">
+          <p className="text-[22px] md:text-[26px] leading-snug tracking-tight">
+            Thoughts on business and how things come together.
+          </p>
+        </header>
 
-          <div className="space-y-px bg-foreground/10 border border-foreground/10">
-            {posts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group block bg-background p-8 hover:bg-foreground/[0.02] transition-all"
-              >
-                <article className="flex flex-col md:flex-row md:items-baseline justify-between gap-4">
-                  <div className="space-y-2">
-                    <h2 className="text-xl font-bold font-sans group-hover:text-accent transition-colors">
-                      {post.title}
-                    </h2>
-                    {post.excerpt && (
-                      <p className="text-sm text-foreground/60 font-mono leading-relaxed max-w-md">
-                        {post.excerpt}
-                      </p>
-                    )}
-                  </div>
-                </article>
-              </Link>
-            ))}
-          </div>
+        <div className="max-w-xl">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group block py-7 border-t border-rule last:border-b"
+            >
+              <article>
+                <h2 className="text-[24px] md:text-[28px] font-medium tracking-tight leading-snug group-hover:text-accent transition-colors">
+                  {post.title}
+                </h2>
+                {post.excerpt && (
+                  <p className="mt-2 text-[17px] leading-relaxed text-muted max-w-md">
+                    {post.excerpt}
+                  </p>
+                )}
+              </article>
+            </Link>
+          ))}
         </div>
       </Container>
 
@@ -48,4 +44,3 @@ export default function Home() {
     </>
   );
 }
-
