@@ -15,7 +15,7 @@ export default function About() {
           </h1>
 
           <p className="mt-8 text-xl leading-relaxed">
-            In the AI era, legacy systems and disconnected functions kill speed and progress. I'm interested in modern data foundations that bridge engineering and sales to deliver faster alignment, reliable AI, and compounding revenue.
+            {"In the AI era, legacy systems and disconnected functions kill speed and progress. I'm interested in modern data foundations that bridge engineering and sales to deliver faster alignment, reliable AI, and compounding revenue."}
           </p>
 
           <div className="mt-8 flex gap-6 text-muted">
