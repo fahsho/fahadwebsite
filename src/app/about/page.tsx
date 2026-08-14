@@ -15,7 +15,7 @@ export default function About() {
           </h1>
 
           <p className="mt-8 text-xl leading-relaxed">
-            In the AI era, legacy systems and disconnected functions kill speed and accuracy. We design modern data foundations that bridge engineering and sales to deliver faster alignment, reliable AI, and compounding revenue.
+            In the AI era, legacy systems and disconnected functions kill speed and progress. I'm interested in modern data foundations that bridge engineering and sales to deliver faster alignment, reliable AI, and compounding revenue.
           </p>
 
           <div className="mt-8 flex gap-6 text-muted">
@@ -38,7 +38,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="mt-24 max-w-3xl">
+        {/* <section className="mt-24 max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight">
             Old silos die here. New foundations win.
           </h2>
@@ -63,7 +63,7 @@ export default function About() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </Container>
 
       <Footer />
