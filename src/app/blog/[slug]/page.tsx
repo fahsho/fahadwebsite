@@ -58,7 +58,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
 
       <article className="py-16 md:py-24">
         <Container>
-          <div className="max-w-xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <Link
               href="/"
               className="text-[15px] text-muted hover:text-foreground transition-colors"
@@ -93,7 +93,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             />
           </div>
 
-          <div className="max-w-xl mx-auto mt-16 pt-8 border-t border-rule">
+          <div className="max-w-2xl mx-auto mt-16 pt-8 border-t border-rule">
             <Link
               href="/"
               className="text-[15px] text-muted hover:text-foreground transition-colors"
