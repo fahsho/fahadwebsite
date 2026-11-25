@@ -8,7 +8,7 @@ Dependencies appear in all aspects of life and business. Dependencies affect our
 
 Smart hires bring what they know. That is why we hire them. We want the thing they already did. That way becomes the company’s way. 
 
-Prior knowledge is helpful, but often, we are closed to another way. It’s how we have done it before and become dependent on the past. It’s safe to lean on past experiences instead of challenging the what’s been done. Why risk failure by experimenting with something new?
+Prior knowledge is helpful, but often, we are closed to another way. It’s how we have done it before and become dependent on the past. It’s safe to lean on past experiences instead of challenging what’s been done. Why risk failure by experimenting with something new?
 
 Dependencies creep into all aspects of business. Product development, tech stack, supply chain, providers, and vendors. All intertwined in a web of connections where if one area is cut, the cascading effects can be crippling.
 
